@@ -76,25 +76,43 @@
 # s2.if_pass()
 # s3.if_pass()
 
-print("Hello Github!")
 
-class Book:
-    def __init__(self, title, author, price):
-        self.title = title
-        self.author = author
-        self.price = price
+# class Book:
+#     def __init__(self, title, author, price):
+#         self.title = title
+#         self.author = author
+#         self.price = price
 
-def priced_books(books):
-    for book in books:
-        if book.price>=500:
-            print(book.title)
-
+# def priced_books(books):
+#     for book in books:
+#         if book.price>=500:
+#             print(book.title)
 
 
-b1 = Book("one piece", "oda", 500)
-b2 = Book("bleach", "aizen", 408)
-b3 = Book("rich dad poor dad", "robert kiyosaki", 590)
 
-books = [b1, b2, b3]
+# b1 = Book("one piece", "oda", 500)
+# b2 = Book("bleach", "aizen", 408)
+# b3 = Book("rich dad poor dad", "robert kiyosaki", 590)
 
-priced_books(books)
+# books = [b1, b2, b3]
+
+# priced_books(books)
+
+class movie:
+    def __init__(self, name, rating, genre):
+        self.name = name
+        self.rating = rating
+        self.genre = genre
+
+def filter_movie(movies, Genre):
+    for movie in movies:
+        if movie.genre == Genre:
+            print(movie.name)
+
+m1 = movie("steel troops", 7.1, "sci fi")
+m2 = movie("ye bhi tha nobita wo bhi tha nobita", 7.8, "adventure")
+m3 = movie("incenption", 9.1, "sci fi")
+
+movies = [m1, m2, m3]
+
+filter_movie(movies, "sci fi")
