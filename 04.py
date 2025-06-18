@@ -76,6 +76,8 @@
 # s2.if_pass()
 # s3.if_pass()
 
+print("Hello Github!")
+
 class Book:
     def __init__(self, title, author, price):
         self.title = title
