@@ -137,30 +137,30 @@
 
 # get_area(s1)
 
-from abc import ABC, abstractmethod
-class SocialMedia(ABC):
-    @abstractmethod
-    def post_content():
-        pass
+# from abc import ABC, abstractmethod
+# class SocialMedia(ABC):
+#     @abstractmethod
+#     def post_content():
+#         pass
 
 
-class insta(SocialMedia):
-    def post_content(self):
-        print("posting photo with filter")
+# class insta(SocialMedia):
+#     def post_content(self):
+#         print("posting photo with filter")
 
-class twitter(SocialMedia):
-    def post_content(self):
-        print("stwitting with hashtag")
+# class twitter(SocialMedia):
+#     def post_content(self):
+#         print("twitting with hashtag")
 
-class linkedin(SocialMedia):
-    def post_content(self):
-        print("sharing professional update")
+# class linkedin(SocialMedia):
+#     def post_content(self):
+#         print("sharing professional update")
 
-i = insta()
-t = twitter()
-l = linkedin()
+# i = insta()
+# t = twitter()
+# l = linkedin()
 
 
-i.post_content()
-t.post_content()
-l.post_content()
+# i.post_content()
+# t.post_content()
+# l.post_content()
