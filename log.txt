@@ -1,0 +1,6 @@
+logged at 2025-06-23 11:06:02.171441 
+2025-06-23 14:10:21,099 - INFO - program started
+2025-06-23 14:10:37,080 - INFO - program started
+2025-06-23 14:10:37,081 - ERROR - Error occured: division by zero
+2025-06-23 14:12:08,309 - INFO - program started
+2025-06-23 14:12:08,309 - ERROR - Error occured: division by zero
