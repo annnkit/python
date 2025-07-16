@@ -1,0 +1,135 @@
+.body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.desert {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.bomber {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: 20%;
+    left: -200px;
+    z-index: 10;
+    animation: fly 5s linear infinite;
+}
+
+.explosion {
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 30%;
+    left: 75%;
+    z-index: 20;
+    opacity: 0;
+    object-fit: contain;
+    animation: explode 2s 5s linear infinite;
+}
+
+.bomb {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #333;
+    border-radius: 50%;
+    top: 25%;
+    left: 75%;
+    z-index: 5;
+    opacity: 0;
+    animation: drop 2s 3s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 8px;
+    font-family: Arial, sans-serif;
+}
+
+.text {
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+    top: 50%;
+    left: 75%;
+    z-index: 5;
+    animation: drop 2s 5s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 100px;
+    font-family: Arial, sans-serif;
+}
+
+.kim{
+    position: absolute;
+    width: 10%;
+    height: 40%;
+    border-radius: 50%;
+    top: 60%;
+    left: 15%;
+    z-index: 5;
+    animation: drop 2s 6s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 100px;
+    font-family: Arial, sans-serif;
+
+}
+
+@keyframes fly {
+    0% {
+        transform: translateX(-200px);
+    }
+    80% {
+        transform: translateX(calc(100vw + 100px));
+    }
+    100% {
+        transform: translateX(calc(100vw + 100px));
+    }
+}
+
+@keyframes drop {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(60vh);
+    }
+}
+
+@keyframes explode {
+    0% {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    10% {
+        opacity: 1;
+        width: 200px;
+        height: 200px;
+    }
+    30% {
+        width: 400px;
+        height: 400px;
+    }
+    100% {
+        opacity: 0;
+        width: 500px;
+        height: 500px;
+    }
+}

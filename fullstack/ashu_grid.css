@@ -1,0 +1,207 @@
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+/* GRID IN CSS */
+
+/* #outer{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: aquamarine;
+    
+}
+
+.boxes{
+    background-color: blueviolet;
+    border: 0.2rem solid rgb(173, 107, 204);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box1{ 
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#box2{
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
+
+#box3{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#box4{
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+#box5{
+    grid-column-start: 5;
+    grid-column-end: 7;
+} */
+
+
+/* Class Work */
+
+/* #outer{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: brown;
+    gap: 0.5rem;
+}
+
+.bar{
+    background-color: rgb(10, 47, 148);
+    border: 0.05rem solid white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.box{
+    background-color: rgb(61, 104, 204);
+    border: 0.05rem solid white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#header{
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+#menu{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+#main{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+
+#ad1{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+
+#ad2{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+#footer{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 6;
+} */
+
+
+
+/* Animation in CSS */
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.b2{
+    height: 300px;
+    width: 300px;
+    margin-top: 10px;
+    margin-left: 600px;
+    position: relative;
+}
+
+.animation_element{
+    margin: 400px 0 0 10px;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(9, 9, 9);
+    color: rgb(247, 242, 242);
+    border: 1rem solid rgb(171, 167, 167);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: fade;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fade {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.animation_element1{
+    margin: 0 0 0 0;
+    height: 200px;
+    width: 200px;
+    background-color: rgb(9, 9, 9);
+    color: rgb(247, 242, 242);
+    border: 1rem solid rgb(171, 167, 167);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: slide;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    /* animation-play-state: paused; */
+    /* animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+    position: relative;
+}
+
+.flame{
+    margin-top: 150px;
+    margin-left: 540px;
+    height: 240px;
+    width: 400px;
+}
+
+@keyframes slide {
+    from{
+        top: 0px;
+    }
+    to{
+        top: 350px;
+    }
+}

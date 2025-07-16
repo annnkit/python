@@ -1,0 +1,23 @@
+p {
+    color:rgb(38, 11, 11);
+    font-size: 16px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+body {
+    background-color: rgba(78, 154, 189, 0.78);
+}
+
+div {
+    background-color: rgb(235, 10, 10);
+    margin: auto;
+    border-color: chocolate;
+    border-width: medium;
+    padding: 5%;
+}
+
+span {
+    background-color: beige;
+    display: block;
+}

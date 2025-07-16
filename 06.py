@@ -149,3 +149,8 @@ if username != "admin":
     raise error
 else:
     print("WElcome, admin!")
+
+#status codes for http
+# 200: ok
+# 404:not found 
+# 500: internal server error
